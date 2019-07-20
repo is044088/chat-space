@@ -1,4 +1,3 @@
-# README
 # Chatspace DB設計
 ## membersテーブル
 
