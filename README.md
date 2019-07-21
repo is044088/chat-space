@@ -1,5 +1,5 @@
 # Chatspace DB設計
-## membersテーブルあ
+## membersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
