@@ -16,7 +16,6 @@
 |name|string|null: false|
 |mail|string|null: false|
 |password|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :members
