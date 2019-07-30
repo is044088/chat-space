@@ -5,11 +5,11 @@
         %p.side-header__box__user-name koki
         %ul.side-header__box__menu
           %li.side-header__box__menu__new-group
-          = link_to "/groups/new" do
+          = link_to "#" do
             -# %i.fa.fa-edit
             =fa_icon 'edit', class: "contents__btn--icon"
           %li.side-header__box__menu__edit-user
-          = link_to "/users/1180/edit" do
+          = link_to "#" do
             -# %i.fa.fa-cog
             =fa_icon 'cog', class: "contents__btn--icon"
     .groups
@@ -24,14 +24,14 @@
           Member :
           %li.main-header__left-box__member-list
             koki
-      =link_to "https://www.facebook.com/", class: "main-header__edit-btn" do
+      =link_to "#", class: "main-header__edit-btn" do
         Edit
     .messages
     .form
-      %form.new_message{:id => "new_message", :enctype => "multipart/form-data", :action => "/", :method => "post"}
+      %form.new_message{id: "new_message", enctype: "multipart/form-data", action: "/", method: "post"}
         .input-box
-          %input.input-box__text{:placeholder => "type a message",:name => "message[content]",:id => "message_content"}
-            %label.input-box__image{:for => "message_image"}
+          %input.input-box__text{placeholder: "type a message",name: "message[content]",id: "message_content"}
+            %label.input-box__image{for: "message_image"}
               %i.fa.fa-image
-              %input.input-box__image__file{:type => "file", :name => "datafile", :id => "message_image", :style => "display:none;"}
-        %input.submit-btn{:type => "submit", :value => "Send",:name => "commit", :"data-disable-with" => "Send"}
+              %input.input-box__image__file{type: "file", name: "datafile", id: "message_image", style: "display:none;"}
+        %input.submit-btn{type: "submit", value: "Send",name: "commit", "data-disable-with": "Send"}
