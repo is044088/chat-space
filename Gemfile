@@ -64,5 +64,6 @@ gem 'devise'
 gem 'pry-byebug'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'pry-rails'
 
 
